@@ -3,7 +3,7 @@
 const changeHeadingEl = document.querySelector("#change-text-btn");
 if (changeHeadingEl) {
     document.querySelector("#change-text-btn").addEventListener("click", () => {
-        const headingEl = document.querySelector("h1");
+        const headingEl = document.querySelector("#changeText");
         const originalText = "Red Text";
         const newText = "Bingus";
         if (headingEl === null ) { return }
@@ -39,7 +39,7 @@ async function getWeather() {
 
 async function updateWeatherText() {
     // find dom element
-    const weatherText = document.querySelector("#weather-text");
+    const weatherText = document.querySelector("#weatherText");
     if (!weatherText) { return }
 
     // get temp
