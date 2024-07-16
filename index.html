@@ -7,31 +7,32 @@
     <link rel="stylesheet" href="assets/index.css">
 </head>
 <body>
-    <img width="200" height="93"  src="https://careeracademy.co.nz/wp-content/uploads/2022/12/The-Career-Academy-BLACK-POS-1.svg" alt="The Career Academy" />
+    
     <header>
-        <h1>Red Text</h1>
+        <h1 id="logo"><img width="200" height="93" src="https://careeracademy.co.nz/wp-content/uploads/2022/12/The-Career-Academy-BLACK-POS-1.svg" alt="The Career Academy" /></h1>
     </header>
-    <button id="change-text-btn">Change Text to "Bingus"</button>
+    <main>
 
-    <p id="weather-text">Loading weather...</p>
-
-    <div class="wrap">
-        <div class="centered">
-            <h2>centered box</h2>
+        <section>
+            <h1>Red Text</h1>
+            <button id="change-text-btn">Change Text to "Bingus"</button>
+            <p id="weather-text">Loading weather...</p>
+        </section>
+        
+        <section class="wrap">
+            <div class="centered">
+                <h2>Centered Box</h2>
+            </div>
+        </section>
+        <div class="split-wrap">
+            <section class="split-wrap__box left-box">
+                <h2>Fully left box</h2>
+            </section>
+            <section class="split-wrap__box right-box">
+                <h2>Fully right box</h2>
+            </section>
         </div>
-    </div>
-
-    <div class="split-wrap">
-        <div class="left-box">
-            <p>fully left box</p>
-        </div>
-        <div class="right-box">
-            <p>fully right box</p>
-        </div>
-    </div>
-
-    <img width="250" height="304" src="assets/Bingus.webp" />
-
-    <script src="assets/script.js"></script>
+    </main>
+    <script src="assets/script.js" defer></script>
 </body>
 </html>
