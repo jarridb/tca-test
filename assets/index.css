@@ -8,21 +8,25 @@ h1 {
 }
 
 .wrap {
-    justify-content: center;
+    display: flex;
 }
 
 .centered {
     padding: 1em;
     background-color: bisque;
     display: flex;
+    flex: 1;
+    justify-content: center;
 }
 
 .split-wrap {
     display: flex;
 }
 
-.split-wrap div {
+.split-wrap__box {
     padding: 1em;
+    gap: 0;
+    flex: 1 1 50%;
 }
 
 .left-box {
@@ -103,3 +107,4 @@ html:has(dialog[open]) {
 .modal__close:hover,
 .modal__close:focus {
     border-color: currentColor;
+}
