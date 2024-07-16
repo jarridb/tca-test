@@ -32,3 +32,74 @@ h1 {
 .right-box {
     background-color: blueviolet;
 }
+
+html:has(dialog[open]) {
+    overflow: hidden;
+}
+
+.modal {
+    height: 100vh;
+    max-width: min(90vw, 60rem);
+    max-height: 90vh;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    padding: 0;
+}
+
+.modal::backdrop {
+    background-color: hsla(0, 0%, 0%, 0.10);
+    backdrop-filter: blur(25px);
+}
+
+.modal__img {
+    --pad: 20px;
+    padding: var(--pad);
+    height: calc(100% - var(--pad) * 2);
+    width: calc(100% - var(--pad) * 2);
+}
+
+.modal__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal__open {
+    padding: 0;
+    display: block;
+    border-style: none;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.modal__close {
+    background: #FFF;
+    border: 1px solid #ccc;
+    border-radius: 1e5px;
+
+    display: inline-flex;
+    font-size: 1rem;
+    justify-content: center;
+    padding-block: .75ch;
+    padding-inline: 1.75ch;
+    text-align: center;
+
+    padding: .75ch;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+    stroke: currentColor;
+    stroke-width: 3px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+    border-color: currentColor;

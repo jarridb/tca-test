@@ -32,6 +32,23 @@
                 <h2>Fully right box</h2>
             </section>
         </div>
+        <section>
+            <h2>Sphynx cat</h2>
+            <button class="modal__open" id="galleryModal-open" aria-haspopup="dialog" title="Open modal" aria-label="Open modal" tabindex="0">
+                <img width="250" height="372" src="assets/Bingus.webp" alt="Sphynx cat" />      
+            </button>
+            <dialog id="galleryModal" class="modal" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+                <div class="modal__img">
+                    <img width="686" height="1102" alt="Sphynx cat in modal" src="assets/Bingus-large.webp" srcset="assets/Bingus-small.webp 330w, assets/Bingus-large.webp 686w" sizes="(max-width: 600px) 90vw, (max-width: 1200px) 70vw, 60vw" loading="lazy" />
+                </div>
+                <button id="galleryModal-close" class="modal__close" type="button" title="Close modal" aria-label="Close modal"> 
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </dialog>
+        </section>
     </main>
     <script src="assets/script.js" defer></script>
 </body>
